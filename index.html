@@ -1,148 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Barack | Portfolio</title>
+
+<title>Barack | Cybersecurity Portfolio</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-background:#0f172a;
-color:white;
+background:black;
+color:#00ff9c;
+font-family:monospace;
+margin:0;
 }
 
-/* NAVBAR */
+header{
+text-align:center;
+padding:40px;
+border-bottom:1px solid #00ff9c;
+}
+
+h1{
+font-size:40px;
+}
 
 nav{
-display:flex;
-justify-content:space-between;
-padding:20px 60px;
-background:#020617;
-position:sticky;
-top:0;
-}
-
-nav h1{
-color:#38bdf8;
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
+text-align:center;
+padding:15px;
 }
 
 nav a{
+color:#00ff9c;
+margin:15px;
 text-decoration:none;
-color:white;
 }
 
-/* HERO */
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
+section{
+padding:60px;
 }
 
-.hero h2{
-font-size:50px;
-}
-
-.hero span{
-color:#38bdf8;
-}
-
-.hero p{
-margin-top:10px;
-opacity:0.8;
-}
-
-.hero button{
-margin-top:20px;
-padding:10px 20px;
-border:none;
-background:#38bdf8;
-border-radius:6px;
-cursor:pointer;
-}
-
-/* PROJECTS */
-
-.projects{
-padding:80px 60px;
-}
-
-.projects h2{
-text-align:center;
-margin-bottom:40px;
-}
-
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1e293b;
+.project{
+border:1px solid #00ff9c;
 padding:20px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* SKILLS */
-
-.skills{
-padding:80px 60px;
-background:#020617;
-}
-
-.skills h2{
-text-align:center;
-margin-bottom:30px;
-}
-
-.skill-list{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.skill{
-background:#1e293b;
-padding:10px 20px;
-border-radius:20px;
-}
-
-/* CONTACT */
-
-.contact{
-padding:80px 60px;
-text-align:center;
+margin:20px 0;
 }
 
 footer{
 text-align:center;
 padding:20px;
-background:#020617;
-margin-top:40px;
+border-top:1px solid #00ff9c;
 }
 
 </style>
@@ -151,78 +56,58 @@ margin-top:40px;
 
 <body>
 
+<header>
+
+<h1>> Barack Portfolio</h1>
+
+<p>Cybersecurity Student | Python Developer | Ethical Hacker</p>
+
+</header>
+
 <nav>
-<h1>Barack</h1>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
-<section class="hero">
+<section id="projects">
 
-<h2>Hello, I'm <span>Barack</span></h2>
+<h2>> Projects</h2>
 
-<p>Cybersecurity Student | Developer | Tech Enthusiast</p>
-
-<button onclick="window.location='#projects'">
-View Projects
-</button>
-
-</section>
-
-<section id="projects" class="projects">
-
-<h2>Projects</h2>
-
-<div class="project-grid">
-
-<div class="card">
+<div class="project">
 <h3>Network Scanner</h3>
-<p>A Python tool for scanning open ports.</p>
+<p>Python tool for scanning devices in a network.</p>
 </div>
 
-<div class="card">
-<h3>Security Dashboard</h3>
-<p>Admin dashboard with analytics.</p>
-</div>
-
-<div class="card">
+<div class="project">
 <h3>Password Cracker</h3>
-<p>Educational brute force tool.</p>
+<p>Educational brute-force password cracking tool.</p>
 </div>
 
-<div class="card">
-<h3>Portfolio Website</h3>
-<p>Personal developer portfolio.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="skills" class="skills">
-
-<h2>Skills</h2>
-
-<div class="skill-list">
-
-<div class="skill">Python</div>
-<div class="skill">Linux</div>
-<div class="skill">Cybersecurity</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Networking</div>
-<div class="skill">Git</div>
-
+<div class="project">
+<h3>Security Dashboard</h3>
+<p>Admin dashboard with login authentication.</p>
 </div>
 
 </section>
 
-<section id="contact" class="contact">
+<section id="skills">
 
-<h2>Contact Me</h2>
+<h2>> Skills</h2>
+
+<p>Python</p>
+<p>Linux</p>
+<p>Networking</p>
+<p>Cybersecurity</p>
+<p>Git</p>
+
+</section>
+
+<section id="contact">
+
+<h2>> Contact</h2>
 
 <p>Email: your@email.com</p>
 
@@ -232,7 +117,7 @@ View Projects
 
 <footer>
 
-<p>© 2026 Barack Portfolio</p>
+<p>© 2026 Barack</p>
 
 </footer>
 
